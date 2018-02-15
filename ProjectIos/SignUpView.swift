@@ -9,8 +9,8 @@
 import UIKit
 
 class SignUpView: UIView {
-
-    @IBOutlet var SIgnUpView: UIView!
+    
+    @IBOutlet var SignUpView: UIView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,6 +23,10 @@ class SignUpView: UIView {
     }
     
     private func commonInit() {
+        Bundle.main.loadNibNamed("SignUpView", owner: self, options: nil)
+        addSubview(SignUpView)
+        SignUpView.frame = self.bounds
+        SignUpView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
     }
 

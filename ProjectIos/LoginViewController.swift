@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  ProjectIos
 //
 //  Created by Matthieu Sukho on 15/02/2018.
@@ -8,17 +8,30 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+protocol SignInViewDelegate {
+    func LoginDidTapped(email: String?, password: String?)
+}
 
+class LoginViewController: UIViewController, SignInViewDelegate {
+    var signIn: SignInView = SignInView()
     
-    override func viewDidLoad() {
+    @IBOutlet weak var SignInOutlet: SignInView!
+    @IBOutlet weak var SignUpOutlet: SignUpView!
+    
+        override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //signIn.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func LoginDidTapped(email: String?, password: String?) {
+        if (email != " " || password != "") {
+            
+        }
     }
 
 
