@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		90BB80D62035892000D87CA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB80D52035892000D87CA0 /* AppDelegate.swift */; };
-		90BB80D82035892000D87CA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB80D72035892000D87CA0 /* ViewController.swift */; };
+		90BB80D82035892000D87CA0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB80D72035892000D87CA0 /* LoginViewController.swift */; };
 		90BB80DB2035892000D87CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BB80D92035892000D87CA0 /* Main.storyboard */; };
 		90BB80DD2035892000D87CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BB80DC2035892000D87CA0 /* Assets.xcassets */; };
 		90BB80E02035892000D87CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BB80DE2035892000D87CA0 /* LaunchScreen.storyboard */; };
 		90BB80EB2035892000D87CA0 /* ProjectIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB80EA2035892000D87CA0 /* ProjectIosTests.swift */; };
 		90BB80F62035892000D87CA0 /* ProjectIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB80F52035892000D87CA0 /* ProjectIosUITests.swift */; };
+		90BB810420358ACF00D87CA0 /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BB810320358ACF00D87CA0 /* SignInView.xib */; };
+		90BB810620358B8400D87CA0 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BB810520358B8400D87CA0 /* SignUpView.xib */; };
+		90BB810820358E5300D87CA0 /* SignInVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB810720358E5300D87CA0 /* SignInVIew.swift */; };
+		90BB810A20358E7200D87CA0 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB810920358E7200D87CA0 /* SignUpView.swift */; };
+		90BB810E2035964F00D87CA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB810D2035964F00D87CA0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		90BB80D22035892000D87CA0 /* ProjectIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BB80D52035892000D87CA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90BB80D72035892000D87CA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90BB80D72035892000D87CA0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		90BB80DA2035892000D87CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90BB80DC2035892000D87CA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BB80DF2035892000D87CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		90BB80F12035892000D87CA0 /* ProjectIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BB80F52035892000D87CA0 /* ProjectIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectIosUITests.swift; sourceTree = "<group>"; };
 		90BB80F72035892000D87CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90BB810320358ACF00D87CA0 /* SignInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		90BB810520358B8400D87CA0 /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		90BB810720358E5300D87CA0 /* SignInVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVIew.swift; sourceTree = "<group>"; };
+		90BB810920358E7200D87CA0 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		90BB810D2035964F00D87CA0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				90BB80D52035892000D87CA0 /* AppDelegate.swift */,
-				90BB80D72035892000D87CA0 /* ViewController.swift */,
+				90BB80D72035892000D87CA0 /* LoginViewController.swift */,
 				90BB80D92035892000D87CA0 /* Main.storyboard */,
 				90BB80DC2035892000D87CA0 /* Assets.xcassets */,
 				90BB80DE2035892000D87CA0 /* LaunchScreen.storyboard */,
 				90BB80E12035892000D87CA0 /* Info.plist */,
+				90BB810320358ACF00D87CA0 /* SignInView.xib */,
+				90BB810520358B8400D87CA0 /* SignUpView.xib */,
+				90BB810720358E5300D87CA0 /* SignInVIew.swift */,
+				90BB810920358E7200D87CA0 /* SignUpView.swift */,
+				90BB810D2035964F00D87CA0 /* User.swift */,
 			);
 			path = ProjectIos;
 			sourceTree = "<group>";
@@ -234,6 +249,8 @@
 			files = (
 				90BB80E02035892000D87CA0 /* LaunchScreen.storyboard in Resources */,
 				90BB80DD2035892000D87CA0 /* Assets.xcassets in Resources */,
+				90BB810420358ACF00D87CA0 /* SignInView.xib in Resources */,
+				90BB810620358B8400D87CA0 /* SignUpView.xib in Resources */,
 				90BB80DB2035892000D87CA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90BB80D82035892000D87CA0 /* ViewController.swift in Sources */,
+				90BB810A20358E7200D87CA0 /* SignUpView.swift in Sources */,
+				90BB80D82035892000D87CA0 /* LoginViewController.swift in Sources */,
 				90BB80D62035892000D87CA0 /* AppDelegate.swift in Sources */,
+				90BB810E2035964F00D87CA0 /* User.swift in Sources */,
+				90BB810820358E5300D87CA0 /* SignInVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
