@@ -8,19 +8,17 @@
 
 import UIKit
 
-protocol SignInViewDelegate {
-    func LoginDidTapped(email: String?, password: String?)
-}
 
-class LoginViewController: UIViewController, SignInViewDelegate {
-    var signIn: SignInView = SignInView()
+
+class LoginViewController: UIViewController, SignInViewDelegate, SignUpViewDelegate {
     
     @IBOutlet weak var SignInOutlet: SignInView!
     @IBOutlet weak var SignUpOutlet: SignUpView!
     
         override func viewDidLoad() {
         super.viewDidLoad()
-        //signIn.delegate = self
+        SignInOutlet.delegate = self
+        SignUpOutlet.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,10 +26,14 @@ class LoginViewController: UIViewController, SignInViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func LoginDidTapped(email: String?, password: String?) {
-        if (email != " " || password != "") {
-            
-        }
+    func RegisterDidTapped() {
+        SignInOutlet.isHidden = true
+        SignUpOutlet.isHidden = false
+    }
+    
+    func LoginDidTapped() {
+        SignUpOutlet.isHidden = true
+        SignInOutlet.isHidden = false
     }
 
 

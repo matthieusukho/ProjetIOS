@@ -8,19 +8,22 @@
 
 import UIKit
 
+@objc protocol SignInViewDelegate {
+    func RegisterDidTapped()
+}
+
 
 class SignInView: UIView {
-    var delegate: SignInViewDelegate?
+     var delegate: SignInViewDelegate?
+    
     
     @IBOutlet var SignInView: UIView!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var email: UITextField!
     
-    @IBAction func Login(_ sender: Any) {
-        delegate?.LoginDidTapped(email: email.text, password: password.text)
+    @IBAction func register() {
+        delegate?.RegisterDidTapped()
     }
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

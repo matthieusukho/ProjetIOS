@@ -8,10 +8,19 @@
 
 import UIKit
 
+@objc protocol SignUpViewDelegate {
+    func LoginDidTapped()
+}
+
 class SignUpView: UIView {
+     var delegate: SignUpViewDelegate?
     
     @IBOutlet var SignUpView: UIView!
     
+  
+    @IBAction func goToLogin(_ sender: Any) {
+        delegate?.LoginDidTapped()
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
