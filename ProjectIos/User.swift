@@ -10,14 +10,13 @@ import Foundation
 
 
 class User {
-    var email: String
-    var password: String
-    static let user: (User)? = nil
+    var email: String? = nil
+    var password: String? = nil
     
-    
-    init(email: String, password: String) {
+    init(email: String, password: String){
         self.email = email
         self.password = password
     }
+    
     
 }

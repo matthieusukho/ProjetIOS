@@ -19,6 +19,7 @@
 		90BB810820358E5300D87CA0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB810720358E5300D87CA0 /* SignInView.swift */; };
 		90BB810A20358E7200D87CA0 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB810920358E7200D87CA0 /* SignUpView.swift */; };
 		90BB810E2035964F00D87CA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB810D2035964F00D87CA0 /* User.swift */; };
+		90BB81142036F31D00D87CA0 /* StaticUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BB81132036F31D00D87CA0 /* StaticUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		90BB810720358E5300D87CA0 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		90BB810920358E7200D87CA0 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		90BB810D2035964F00D87CA0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		90BB81132036F31D00D87CA0 /* StaticUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				90BB810720358E5300D87CA0 /* SignInView.swift */,
 				90BB810920358E7200D87CA0 /* SignUpView.swift */,
 				90BB810D2035964F00D87CA0 /* User.swift */,
+				90BB81132036F31D00D87CA0 /* StaticUser.swift */,
 			);
 			path = ProjectIos;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				90BB810A20358E7200D87CA0 /* SignUpView.swift in Sources */,
 				90BB80D82035892000D87CA0 /* LoginViewController.swift in Sources */,
+				90BB81142036F31D00D87CA0 /* StaticUser.swift in Sources */,
 				90BB80D62035892000D87CA0 /* AppDelegate.swift in Sources */,
 				90BB810E2035964F00D87CA0 /* User.swift in Sources */,
 				90BB810820358E5300D87CA0 /* SignInView.swift in Sources */,

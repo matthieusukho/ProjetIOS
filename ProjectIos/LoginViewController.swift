@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class LoginViewController: UIViewController, SignInViewDelegate, SignUpViewDelegate {
+class LoginViewController: UIViewController, SignInViewDelegate, SignUpViewDelegate{
     
     @IBOutlet weak var SignInOutlet: SignInView!
     @IBOutlet weak var SignUpOutlet: SignUpView!
@@ -35,7 +35,9 @@ class LoginViewController: UIViewController, SignInViewDelegate, SignUpViewDeleg
         SignUpOutlet.isHidden = true
         SignInOutlet.isHidden = false
     }
-
+    
+    
+    
 
 }
 

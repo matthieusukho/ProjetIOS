@@ -18,9 +18,21 @@ class SignInView: UIView {
     
     
     @IBOutlet var SignInView: UIView!
+   
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var email: UITextField!
     
+    @IBAction func login(_ sender: Any) {
+        if (StaticUser.instance?.user?.email == email.text && StaticUser.instance?.user?.password == password.text){
+            print ("succesfull login")
+        }else if (StaticUser.instance?.user?.email != email.text && StaticUser.instance?.user?.password != password.text){
+            print("Unable to find a match with this pair of email / password")
+        }
+        
+        if (StaticUser.instance?.user == nil){
+            print("Please register first")
+        }
+    }
     @IBAction func register() {
         delegate?.RegisterDidTapped()
     }
